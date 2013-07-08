@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Welcome to GitHub, Jr. - <%= @login %></h1>
+
+  <h2><%= @login %>'s Followers</h2>
+  <% @followers.each do |follower| %>
+    <%= follower.login %><br>
+  <% end %>
+
+  <h2><%= @login %> is Following</h2>
+  <% @following.each do |following| %>
+    <%= following.login %><br>
+  <% end %>
+
+  <h2><%= @login %>'s Gists</h2>
+    <% @gists.each do |gist| %>
+      <%= gist.description %><br>
+    <% end %>
+</div>
+
